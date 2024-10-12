@@ -13,6 +13,11 @@
   --container-narrow: 900px;
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
@@ -27,7 +32,7 @@ ul {
   list-style: none;
 }
 
-img {
+img, video {
   max-width: 100%;
 }
 
@@ -285,10 +290,6 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
   padding: 10rem;
-} 
-
-video {
-  max-width: 100%;
 }
 
 /* Media Queries */
@@ -315,5 +316,10 @@ video {
 
   .footer .footer-flex {
     text-align: center;
+  }
+
+  .services-grid, .video-wrapper {
+    grid-template-columns: 1fr;
+    padding: 1rem;
   }
 }
