@@ -145,14 +145,13 @@ img, video {
   /*height: 500px;*/
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
   place-items: center;
   background-color: azure;
   padding: 3.125rem 6.5rem;
 }
 
 .hero img {
-  padding: 2rem;
+  max-height: 650px;
 }
 
 .hero h2 {
@@ -224,6 +223,7 @@ img, video {
 
 .services img, .services video {
   padding: 2rem;
+  max-height: 650px;
 }
 
 .services-grid {
